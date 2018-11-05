@@ -1,0 +1,202 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body, html {
+	height: 100%;
+	font-size: 16px;
+	font-family: Arial;
+	background-color: #f1f1f1;
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.clearfix::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.o-header {
+	position: relative;
+	width: 100%;
+	height: 105px;
+	background-color: #fff;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+}
+
+.o-header__logo-wrapper {
+	float: left;
+	padding-top: 22.5px;
+	height: 100%;
+}
+
+.o-header__logo-link {
+	display: block;
+}
+
+.o-header__logo {
+	width: 145px;
+	height: 60px;
+}
+
+.o-header__nav-wrapper {
+	float: right;
+	height: 100%;
+}
+
+.o-header__nav-list {
+	padding-top: 42px;
+	font-size: 0;
+}
+
+.o-header__nav-item {
+	display: inline-block;
+	margin-right: 40px;
+}
+
+.o-header__nav-link {
+	font-size: 18px;
+	color: #adafb2;
+	text-transform: uppercase;
+}
+
+.o-header__nav-link:hover {
+	color: #ed1b2f;
+}
+
+.o-container {
+	background-color: #fff;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.18);
+}
+
+.o-container_margin_top_50 {
+	margin-top:  50px;
+}
+
+.o-container__header-wrapper {
+	width: calc(100% - 120px);
+	margin: 0 60px;
+}
+
+.o-container__header {
+	padding: 30px 0;
+	border-bottom: solid 1px #d8d8d8;
+}
+
+.o-container__title {
+	float: left;
+}
+
+.o-container__form {
+	position: relative;
+	margin-top: 8px;
+	float: right;
+	width: 225px;
+}
+
+.o-container__search {
+	height: 40px;
+}
+
+.o-container__search::placeholder {
+	font-size: 14px;
+	font-weight: normal;
+	color: #c3c3c3;
+}
+
+.o-container__button {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	
+}
+
+.o-container__button-icon {
+	width: 24px;
+	height: 24px;
+	color: #E5E5E5;
+}
+
+.o-container__pockets-wrapper {
+	margin: 0 45px;
+	width: calc(100% - 90px);
+}
+
+.o-container__pockets {
+	padding: 30px 0 60px;
+}
+
+.o-container__pocket {
+	padding: 0 15px;
+}
+
+.o-container__pocket-img {
+	width: 100%;
+	height: 200px;
+	background-position: center;
+	background-size: cover;
+}
+
+.o-container__pocket-title {
+	padding: 18px 0 5px;
+	font-size: 20px;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #32393d;
+}
+
+.o-container__pocket-date {
+	font-size: 16px;
+	color: #adafb2;
+}
+
+.o-container__apps-wrapper {
+	margin: 0 40px;
+	width: calc(100% - 80px);
+}
+
+.o-container__apps {
+	padding: 60px 0;
+}
+
+.o-container__apps-column {
+	padding: 0 20px;
+}
+
+.o-container__apps-header {
+	padding-bottom: 20px;
+	border-bottom: solid 1px #d8d8d8;
+}
+
+.o-container__apps-title {
+	float: left;
+	font-size: 24px;
+	font-weight: bold;
+	color: #34495e;
+
+}
+
+.o-container__apps-title-icon {
+	float: right;
+	width: 32px;
+	height: 32px;
+	transform: rotateZ(180deg);
+}
+
+
+
+
+
+
+
