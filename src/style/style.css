@@ -1,32 +1,3 @@
-*, *::before, *::after {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-
-body, html {
-	height: 100%;
-	font-size: 16px;
-	font-family: Arial;
-	background-color: #f1f1f1;
-}
-
-a {
-	text-decoration: none;
-}
-
-button {
-	background: none;
-	border: none;
-	cursor: pointer;
-}
-
-.clearfix::after {
-	content: '';
-	display: block;
-	clear: both;
-}
-
 .o-header {
 	position: relative;
 	width: 100%;
@@ -76,12 +47,17 @@ button {
 }
 
 .o-container {
+	height: auto;
 	background-color: #fff;
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.18);
 }
 
 .o-container_margin_top_50 {
 	margin-top:  50px;
+}
+
+.o-container_margin_bottom_100 {
+	margin-bottom: 100px;
 }
 
 .o-container__header-wrapper {

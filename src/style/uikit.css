@@ -10,6 +10,43 @@
 	--active-border-color: #55acee;
 }
 
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body, html {
+	height: 100%;
+	font-size: 16px;
+	font-family: Arial;
+	background-color: #f1f1f1;
+}
+
+:active, :hover, :focus {
+	outline: 0;
+	outline-offset: 0;
+}
+
+a, a:hover, a:focus, a:active {text-decoration: none;}
+
+h1, h2, h3, h4, h5, h6 {margin: 0;}
+
+button {
+	padding: 0;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+ul {list-style: none;}
+
+.clearfix::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
 .l-grid {
 	width: 100%;
 	font-size: 0;
