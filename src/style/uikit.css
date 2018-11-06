@@ -375,5 +375,4 @@ input[type="checkbox"]:checked + .o-label-toggle::after {
 .o-cover {
 	max-width: 1180px;
 	margin: 0 auto;
-	height: 100%;
 }

@@ -59,12 +59,14 @@
 
 .o-container {
 	height: auto;
-	background-color: #fff;
-	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.18);
 }
 
-.o-container__wrapper {
-	margin: 0 40px;
+.o-container_background_color_white {
+	background-color: #fff;
+}
+
+.o-container_shadow_5 {
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.18);
 }
 
 .o-container_margin_top_50 {
@@ -75,74 +77,78 @@
 	margin-bottom: 100px;
 }
 
-.o-container__header-wrapper {
+.o-main__wrapper {
+	margin: 0 40px;
+}
+
+.o-main__header-wrapper {
 	width: calc(100% - 40px);
 	margin: 0 20px;
 }
 
-.o-container__header {
+.o-main__header {
 	padding: 30px 0 0;
 	border-bottom: solid 1px #d8d8d8;
 }
 
-.o-container__title {
+.o-main__title {
 	float: left;
 	padding-bottom: 20px;
 }
 
-.o-container__form {
+.o-main__form {
 	position: relative;
 	float: right;
 	width: 225px;
 }
 
-.o-container__form_margin_top_10 {
+.o-main__form_margin_top_10 {
 	margin-top: 10px;
 }
 
-.o-container__search {
+.o-main__search {
 	height: 40px;
 }
 
-.o-container__search::placeholder {
+.o-main__search::placeholder {
 	font-size: 14px;
 	font-weight: normal;
 	color: #c3c3c3;
 }
 
-.o-container__button {
+.o-main__button {
 	position: absolute;
 	top: 8px;
 	right: 8px;
 }
 
-.o-container__button-icon {
+.o-main__button-icon {
 	width: 24px;
 	height: 24px;
 	color: #E5E5E5;
 }
 
-.o-container__pockets-wrapper {
+.o-main__pockets-wrapper {
 	margin: 0 5px;
 	width: calc(100% - 10px);
 }
 
-.o-container__pockets {
+.o-main__pockets {
 	padding: 30px 0 60px;
 }
 
-.o-container__pocket {
+.o-main__pocket {
 	padding: 0 15px;
 }
 
-.o-container__pocket-img {
+.o-main__pocket-img {
 	width: 100%;
 	height: 200px;
 	background-position: center;
 	background-size: cover;
 }
 
-.o-container__pocket-title {
+.o-main__pocket-title {
 	padding: 18px 0 5px;
 	font-size: 20px;
 	font-weight: normal;
@@ -150,30 +156,30 @@
 	color: #32393d;
 }
 
-.o-container__pocket-date {
+.o-main__pocket-date {
 	font-size: 16px;
 	color: #adafb2;
 }
 
-.o-container__apps-wrapper {
+.o-main__apps-wrapper {
 	width: 100%;
 }
 
-.o-container__apps {
+.o-main__apps {
 	padding: 0 0 60px;
 }
 
-.o-container__apps-column {
+.o-main__apps-column {
 	padding: 0 20px;
 }
 
-.o-container__apps-header {
+.o-main__apps-header {
 	position: relative;
 	padding: 0 40px 20px 0;
 	border-bottom: solid 1px #d8d8d8;
 }
  
-.o-container__apps-header-title-icon {
+.o-main__apps-header-title-icon {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -183,24 +189,24 @@
 	color: #32393D;
 }
 
-.o-container__apps-header_margin_bottom_40 {
+.o-main__apps-header_margin_bottom_40 {
 	margin-bottom: 40px;
 }
 
-.o-container__apps-list {
+.o-main__apps-list {
 	width: 100%;
 }
 
-.o-container__apps-item {
+.o-main__apps-item {
 	position: relative;
 	padding-left: 40px;
 }
 
-.o-container__apps-item_margin_bottom_30 {
+.o-main__apps-item_margin_bottom_30 {
 	margin-bottom: 30px;
 }
 
-.o-container__apps-title {
+.o-main__apps-title {
 	width: 100%;
 	font-size: 20px;
 	font-weight: normal;
@@ -208,17 +214,17 @@
 	color: #47525d;
 }
 
-.o-container__apps-link {
+.o-main__apps-link {
 	font-size: 20px;
 	line-height: 1.5;
 	color: rgba(96, 106, 117, 0.6);
 }
 
-.o-container__apps-link:hover {
+.o-main__apps-link:hover {
 	color: #ed1b2f;
 }
 
-.o-container__apps-icon {
+.o-main__apps-icon {
 	position: absolute;
 	top: 3px;
 	left: 0;
@@ -227,7 +233,19 @@
 	color: #D6D8D9;
 }
 
+/* Стили для Каталога */
 
+.o-catalog {
+	height: auto;
+}
+
+.o-catalog_margin_top_50 {
+	margin-top: 50px;
+}
+
+.o-catalog_margin_bottom_100 {
+	margin-bottom: 100px;
+}
 
 
 
