@@ -47,17 +47,16 @@
 	text-transform: uppercase;
 }
 
-.o-header__nav-link_active {
-	color: #ed1b2f;
-}
-
+.o-header__nav-link_active,
 .o-header__nav-link:hover {
 	color: #ed1b2f;
 }
 
 /* Контейнер для главной страницы */
 
-.o-container {
+.o-container {}
+
+.o-container_height {
 	height: calc(100% - 255px);
 }
 
@@ -253,4 +252,131 @@
 	margin-bottom: -20000px;
 	padding-bottom: 20000px;
 	overflow-y: hidden;
+}
+
+.o-catalog__wrapper {
+	padding: 40px 25px 0;
+}
+
+.o-catalog__title {
+	padding-bottom: 18px;
+	border-bottom: solid 1px #d8d8d8;
+}
+
+.o-catalog__list {
+	padding-top: 20px;
+	padding-left: 25px;
+}
+
+.o-catalog__item {
+	padding-left: 10px;
+	list-style-type: disc;
+	color: #79878e;
+}
+
+.o-catalog__link {
+	font-size: 20px;
+	line-height: 40px;
+	color: #79878e;
+}
+
+.o-catalog__link_active,
+.o-catalog__link:hover {
+	color: #f13843;
+	text-decoration: underline;
+}
+
+.o-content__title {
+	padding: 30px 40px 17px; 
+	width: 100%;
+}
+
+.o-content__table {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 100%;
+
+	overflow-x: auto;
+	white-space: nowrap;
+
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.o-content__table_margin_bottom_50 {
+	margin-bottom: 50px;
+}
+
+.o-content__table tbody tr:nth-child(2n) {
+	background-color: #f7f7f7;
+}
+
+.o-content__table-head {
+	background-color: #f1f1f1;
+}
+
+.o-content__table-img-cell {
+	width: 16.233%;
+}
+
+.o-content__table-img {
+	margin: 10px 10px 10px 35px;
+	width: 80px;
+	height: 60px;
+	background-image: url(../images/shot-2-small.jpg);
+	background-position: 100%;
+	background-size: cover;
+}
+
+.o-content__table-name-cell {
+	width: 28.57%;
+}
+
+.o-content__table-name {
+	font-size: 16px;
+	line-height: 25px;
+	color: #79878e;
+}
+
+.o-content__table-date {
+	font-size: 13px;
+	color: #adafb2;
+}
+
+.o-content__table_margin_side_10 {
+	margin: 0 10px;
+}
+
+.o-content__table-title-name,
+.o-content__table-title-description,
+.o-content__table-title-cost {
+	padding: 0 10px;
+	height: 35px;
+	text-align: left;
+	font-size: 14px;
+	font-weight: normal;
+	color: #414141;
+}
+
+.o-content__table-title-cost {
+	font-size: 13px;
+}
+
+.o-content__table-description-cell {
+	width: 44%;
+}
+
+.o-content__table-description {
+	font-size: 13px;
+	font-weight: normal;
+	color: #222222;
+}
+
+.o-content__table-cost-cell {
+	width: 11.17%;
+	padding-left: 10px;
+	padding-right: 70px;
+	font-size: 18px;
+	font-weight: normal;
+	color: #5f5f5f;
 }
