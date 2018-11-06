@@ -54,6 +54,7 @@ ul {list-style: none;}
 
 [class*="l-grid-"] {
 	display: inline-block;
+	vertical-align: top;
 }
 
 .l-grid-1 {width: 8.33%}
@@ -82,17 +83,17 @@ ul {list-style: none;}
 }
 
 .o-title-3 {
-	font-size: 48px;
+	font-size: 40px;
 	line-height: 1;
 }
 
 .o-title-4 {
-	font-size: 40px;
+	font-size: 36px;
 	line-height: 1.2;
 }
 
 .o-title-5 {
-	font-size: 40px;
+	font-size: 24px;
 	line-height: 1.33;
 }
 

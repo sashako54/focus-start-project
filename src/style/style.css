@@ -1,3 +1,5 @@
+/* header использутся на всех страницах */
+
 .o-header {
 	position: relative;
 	width: 100%;
@@ -33,7 +35,10 @@
 
 .o-header__nav-item {
 	display: inline-block;
-	margin-right: 40px;
+}
+
+.o-header__nav-item_margin_left_40 {
+	margin-left: 40px;
 }
 
 .o-header__nav-link {
@@ -42,14 +47,24 @@
 	text-transform: uppercase;
 }
 
+.o-header__nav-link_active {
+	color: #ed1b2f;
+}
+
 .o-header__nav-link:hover {
 	color: #ed1b2f;
 }
+
+/* Контейнер для главной страницы */
 
 .o-container {
 	height: auto;
 	background-color: #fff;
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.18);
+}
+
+.o-container__wrapper {
+	margin: 0 40px;
 }
 
 .o-container_margin_top_50 {
@@ -61,24 +76,28 @@
 }
 
 .o-container__header-wrapper {
-	width: calc(100% - 120px);
-	margin: 0 60px;
+	width: calc(100% - 40px);
+	margin: 0 20px;
 }
 
 .o-container__header {
-	padding: 30px 0;
+	padding: 30px 0 0;
 	border-bottom: solid 1px #d8d8d8;
 }
 
 .o-container__title {
 	float: left;
+	padding-bottom: 20px;
 }
 
 .o-container__form {
 	position: relative;
-	margin-top: 8px;
 	float: right;
 	width: 225px;
+}
+
+.o-container__form_margin_top_10 {
+	margin-top: 10px;
 }
 
 .o-container__search {
@@ -95,7 +114,6 @@
 	position: absolute;
 	top: 8px;
 	right: 8px;
-	
 }
 
 .o-container__button-icon {
@@ -105,8 +123,8 @@
 }
 
 .o-container__pockets-wrapper {
-	margin: 0 45px;
-	width: calc(100% - 90px);
+	margin: 0 5px;
+	width: calc(100% - 10px);
 }
 
 .o-container__pockets {
@@ -138,12 +156,11 @@
 }
 
 .o-container__apps-wrapper {
-	margin: 0 40px;
-	width: calc(100% - 80px);
+	width: 100%;
 }
 
 .o-container__apps {
-	padding: 60px 0;
+	padding: 0 0 60px;
 }
 
 .o-container__apps-column {
@@ -151,26 +168,64 @@
 }
 
 .o-container__apps-header {
-	padding-bottom: 20px;
+	position: relative;
+	padding: 0 40px 20px 0;
 	border-bottom: solid 1px #d8d8d8;
 }
-
-.o-container__apps-title {
-	float: left;
-	font-size: 24px;
-	font-weight: bold;
-	color: #34495e;
-
-}
-
-.o-container__apps-title-icon {
-	float: right;
+ 
+.o-container__apps-header-title-icon {
+	position: absolute;
+	top: 0;
+	right: 0;
 	width: 32px;
 	height: 32px;
 	transform: rotateZ(180deg);
+	color: #32393D;
 }
 
+.o-container__apps-header_margin_bottom_40 {
+	margin-bottom: 40px;
+}
 
+.o-container__apps-list {
+	width: 100%;
+}
+
+.o-container__apps-item {
+	position: relative;
+	padding-left: 40px;
+}
+
+.o-container__apps-item_margin_bottom_30 {
+	margin-bottom: 30px;
+}
+
+.o-container__apps-title {
+	width: 100%;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 1.5;
+	color: #47525d;
+}
+
+.o-container__apps-link {
+	font-size: 20px;
+	line-height: 1.5;
+	color: rgba(96, 106, 117, 0.6);
+}
+
+.o-container__apps-link:hover {
+	color: #ed1b2f;
+}
+
+.o-container__apps-icon {
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 24px;
+	height: 24px;
+	color: #D6D8D9;
+}
 
 
 
