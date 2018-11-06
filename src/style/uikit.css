@@ -219,9 +219,11 @@ table {
 .o-button {
 	height: 50px;
 	padding: 0 114px;
-	font-size: 14px;
+	font-size: 12px;
+	font-weight: bold;
 	line-height: 1.36;
-	text-decoration: uppercase;
+	text-transform: uppercase;
+	border-radius: 3px;
 	color: #fff;
 }
 
