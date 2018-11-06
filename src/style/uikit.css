@@ -41,6 +41,12 @@ button {
 
 ul {list-style: none;}
 
+table {
+	border-collapse: collapse;
+	empty-cells: show;
+	table-layout: auto;	
+}
+
 .clearfix::after {
 	content: '';
 	display: block;
@@ -54,6 +60,7 @@ ul {list-style: none;}
 
 [class*="l-grid-"] {
 	display: inline-block;
+	vertical-align: top;
 }
 
 .l-grid-1 {width: 8.33%}
@@ -82,17 +89,17 @@ ul {list-style: none;}
 }
 
 .o-title-3 {
-	font-size: 48px;
+	font-size: 40px;
 	line-height: 1;
 }
 
 .o-title-4 {
-	font-size: 40px;
+	font-size: 36px;
 	line-height: 1.2;
 }
 
 .o-title-5 {
-	font-size: 40px;
+	font-size: 24px;
 	line-height: 1.33;
 }
 
@@ -374,5 +381,4 @@ input[type="checkbox"]:checked + .o-label-toggle::after {
 .o-cover {
 	max-width: 1180px;
 	margin: 0 auto;
-	height: 100%;
 }
