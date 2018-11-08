@@ -139,6 +139,7 @@
 }
 
 .o-main__pocket-img {
+	display: block;
 	width: 100%;
 	height: 200px;
 	background-position: center;
@@ -287,8 +288,15 @@
 }
 
 .o-content__title {
-	padding: 30px 40px 17px; 
-	width: 100%;
+	padding: 30px 0 17px;
+}
+
+.o-content__title_margin_side_40 {
+	margin: 0 40px;
+}
+
+.o-content__title_border_bottom {
+	border-bottom: solid 1px #d8d8d8;
 }
 
 .o-content__table {
@@ -379,4 +387,99 @@
 	font-size: 18px;
 	font-weight: normal;
 	color: #5f5f5f;
+}
+
+/* инфо приложения */
+
+.o-app {
+	padding: 0 40px 0 35px;
+}
+
+.o-app__wrapper {
+	padding: 20px 0 40px;
+}
+
+.o-app__inbasket {
+	float: right;
+    max-width: 250px;
+    width: 100%;
+}
+
+.o-app__img {
+	height: 190px;
+	background-image: url(../images/shot-2-info.jpg);
+	background-position: 100%;
+	background-size: cover;
+}
+
+.o-app__button {
+	display: block;
+	margin: 0 auto;
+}
+
+.o-app__button_margin_top_20 {
+	margin-top: 20px;
+}
+
+.o-app__button span {
+	display: inline-block;
+	line-height: 20px;
+}
+
+.o-app__button-icon {
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+}
+
+.o-app__button-icon_margin_left_5 {
+	margin-left: 5px;
+}
+
+.o-app__info {
+	max-width: 400px;
+	float: left;
+	/* margin-right: 350px; */
+}
+
+.o-app__info-date {
+	display: block;
+	font-size: 16px;
+	color: #adafb2;
+}
+
+.o-app__info-date_margin_bottom_14 {
+	margin-bottom: 14px;
+}
+
+.o-app__info-text {
+	font-size: 20px;
+	line-height: 1.25;
+	color: #79878e;
+}
+
+.o-app__info-text span {
+	color: #4f5659
+}
+
+.o-app__functions-title {
+	padding-bottom: 18px;
+	font-size: 22px;
+	font-weight: normal;
+	color: #32393d;
+	text-transform: uppercase;
+	border-bottom: solid 1px #d8d8d8;
+}
+
+.o-app__finctions-list {
+	padding: 30px 0 30px 25px;
+}
+
+.o-app__finctions-item {
+	padding: 0 0 30px 10px;
+	font-size: 18px;
+	line-height: 1.72;
+	list-style-type: disc;
+	color: #4d5762;
 }
