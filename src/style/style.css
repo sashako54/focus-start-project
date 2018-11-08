@@ -299,6 +299,7 @@
 	border-bottom: solid 1px #d8d8d8;
 }
 
+.o-modal__table,
 .o-content__table {
 	display: inline-block;
 	vertical-align: top;
@@ -540,6 +541,64 @@
 	color: #34495e;
 }
 
+.o-modal__table_margin_top_100 {
+	margin-top: 100px;
+}
 
+.o-modal__table-title {
+	margin-bottom: 20px;
+}
 
+.o-modal__table-title,
+.o-modal__table-row {
+	border-bottom: solid 1px #e8e9ed;
+}
 
+.o-modal__table-title-name {
+	height: 30px;
+	font-size: 12px;
+	font-weight: bold;
+	vertical-align: top;
+	color: #9fa3a7;
+	text-transform: uppercase;
+}
+
+.o-modal__table-title-name_align_left {
+	text-align: left;
+}
+.o-modal__table-title-name_align_right {
+	text-align: right;
+}
+
+.o-modal__table-img-cell {
+	padding: 35px 20px 35px 0;
+	width: 12.14%;
+}
+
+.o-modal__table-img {
+	width: 116px;
+	height: 87px;
+	background-image: url(../images/shot-2-popup.jpg);
+	background-size: cover;
+	background-position: 100%;
+}
+
+.o-modal__table-name-cell {
+	width: 34.64%;
+}
+
+.o-modal__table-cost-cell {
+	width: 10.53%;
+}
+
+.o-modal__table-quantity-cell {
+	width: 16.43%;
+}
+
+.o-modal__table-sum-cell {
+	width: 13.57%;
+}
+
+.o-modal__table-del-cell {
+	width: 12.67%;
+}
