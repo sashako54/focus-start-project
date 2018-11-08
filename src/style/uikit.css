@@ -154,16 +154,19 @@ table {
 	border: solid 1px var(--primary-border-color);
 	border-radius: 15px;
 	background-color: #fff;
+	color: rgba(133, 133, 133, 0.29);
 }
 
 .o-steps_blue {
 	border: none;
 	background-color: var(--primary-color);
+	color: #fff;
 }
 
 .o-steps_green {
 	border: none;
 	background-color: var(--success-color);
+	color: #fff;
 }
 
 .o-modal {
