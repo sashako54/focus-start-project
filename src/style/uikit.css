@@ -76,6 +76,10 @@ table {
 .l-grid-11 {width: 91.66%}
 .l-grid-12 {width: 100%}
 
+.hidden {
+	display: none !important;
+}
+
 
 
 [class*="o-title-"] {
