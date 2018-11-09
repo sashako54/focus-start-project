@@ -506,8 +506,9 @@
 	background-color: #fff;
 }
 
-.o-modal__wrapper_margin_top_108 {
+.o-modal__wrapper_margin_vertical {
 	margin-top: 108px;
+	margin-bottom: 108px;
 }
 
 .o-modal__steps-list {
@@ -555,6 +556,7 @@
 }
 
 .o-modal__table-title-name {
+	padding-right: 20px;
 	height: 30px;
 	font-size: 12px;
 	font-weight: bold;
@@ -584,21 +586,138 @@
 }
 
 .o-modal__table-name-cell {
+	padding: 0 20px;
 	width: 34.64%;
 }
 
+.o-modal__table-name-label {
+	position: relative;
+}
+
+.o-modal__table-name {
+	font-size: 22px;
+	font-weight: normal;
+	line-height: 32px;
+}
+
+.o-modal__table-name_margin_bottom_12 {
+	margin-bottom: 12px;
+}
+
+
+.o-modal__table-sum-cell,
 .o-modal__table-cost-cell {
+	padding: 0 20px;
 	width: 10.53%;
+	text-align: right;
 }
 
 .o-modal__table-quantity-cell {
+	padding: 0 20px;
 	width: 16.43%;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: right;
+	color: #000;
 }
 
+.o-modal__table-quantity {
+	position: relative;
+	width: 90px;
+    margin: 0 auto;
+}
+
+.o-modal__table-quantity-input {
+	padding-left: 40px;
+	width: 90px;
+	height: 30px;
+	border-radius: 15px;
+	border: solid 2px #eeeeee;
+	color: #212121;
+}
+
+.o-modal__table-quantity-icon-minus,
+.o-modal__table-quantity-icon-plus {
+	position: absolute;
+	top: 7px;
+	width: 16px;
+	height: 16px;
+	color: #9FA3A7;
+}
+
+.o-modal__table-quantity-icon-minus {
+	left: 7px;
+}
+
+.o-modal__table-quantity-icon-plus {
+	right: 7px;
+}
+
+.o-modal__table-quantity-icon-minus:hover,
+.o-modal__table-quantity-icon-plus:hover {
+	color: #212121;
+}
+
+
 .o-modal__table-sum-cell {
+	padding: 0 20px;
 	width: 13.57%;
 }
 
 .o-modal__table-del-cell {
+	padding: 0 20px;
 	width: 12.67%;
+	text-align: center;
 }
+
+.o-modal__table-del-icon {
+	width: 32px;
+	height: 32px;
+	color: #4A90E2;
+}
+
+.o-modal__table-del-icon:hover {
+	color: var(--danger-color);
+}
+
+.o-modal__footer {
+	height: 40px;
+	padding: 70px 160px;
+}
+
+.o-modal__footer-wrapper {
+	float: right;
+	font-size: 0;
+}
+
+.o-modal__sum-cost {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.o-modal__sum-cost-dollars {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 38px;
+	color: #292929;
+}
+
+.o-modal__sum-cost-cents {
+	display: inline-block;
+	padding-top: 4px;
+	padding-left: 2px;
+	font-size: 20px;
+	color: #9FA3A7;
+}
+
+.o-modal__button {
+	display: inline-block;
+}
+
+.o-modal__button_margin_left_70 {
+	margin-left: 70px;
+}
+
+
+
+

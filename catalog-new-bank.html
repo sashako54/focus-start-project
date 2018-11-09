@@ -8,8 +8,8 @@
 	</head>
 	<body>
 		<div class="o-modal hidden js-modal">
-			<div class="o-modal__wrapper o-modal__wrapper_margin_top_108">
-				<div class="o-modal__steps">
+			<div class="o-modal__wrapper o-modal__wrapper_margin_vertical">
+				<header class="o-modal__steps">
 					<ul class="o-modal__steps-list">
 						<li class="o-modal__steps-item o-modal__steps-item_margin_right_100">
 							<div class="o-modal__steps-stage o-steps o-steps_blue">1</div>
@@ -28,13 +28,13 @@
 							<p class="o-modal__steps-name">Подтверждние</p>
 						</li>
 					</ul>
-				</div>
+				</header>
 				<table class="o-modal__table o-modal__table_margin_top_100">
 					<thead class="o-modal__table-head">
 						<tr class="o-modal__table-title">
 							<th class="o-modal__table-title-name o-modal__table-title-name_align_left">Приложение</th>
 							<th class="o-modal__table-title-name"></th>
-							<th class="o-modal__table-title-name o-modal__table-title-name_align_left">Стоимость</th>
+							<th class="o-modal__table-title-name o-modal__table-title-name_align_right">Стоимость</th>
 							<th class="o-modal__table-title-name"></th>
 							<th class="o-modal__table-title-name o-modal__table-title-name_align_right">Итог</th>
 							<th class="o-modal__table-title-name"></th>
@@ -46,17 +46,76 @@
 								<div class="o-modal__table-img"></div>
 							</td>
 							<td class="o-modal__table-name-cell">
-								<div>
-									
+								<h4 class="o-modal__table-name o-modal__table-name_margin_bottom_12">Новый ЦФТ-Банк</h4>
+								<input type="checkbox" name="" id="install-1">
+								<label class="o-modal__table-name-label o-label-checkbox" for="install-1">установка и настройка
+									<svg class="o-label-icon">
+										<use xlink:href="#icon-thick-check"></use>
+									</svg>
+								</label>
+							</td>
+							<td class="o-modal__table-cost-cell">$139,99</td>
+							<td class="o-modal__table-quantity-cell">
+								<div class="o-modal__table-quantity">
+									<svg class="o-modal__table-quantity-icon-minus js-modal__table-quantity-icon-minus">
+										<use xlink:href="#icon-minus"></use>
+									</svg>
+									<svg class="o-modal__table-quantity-icon-plus js-modal__table-quantity-icon-plus">
+										<use xlink:href="#icon-plus"></use>
+									</svg>
+									<input class="o-modal__table-quantity-input js-modal__table-quantity-input" type="number" value="1" min="1" max="10" readonly/>
 								</div>
 							</td>
-							<td class="o-modal__table-cost-cell"></td>
-							<td class="o-modal__table-quantity-cell"></td>
-							<td class="o-modal__table-sum-cell"></td>
-							<td class="o-modal__table-del-cell"></td>
+							<td class="o-modal__table-sum-cell">$139,99</td>
+							<td class="o-modal__table-del-cell">
+								<svg class="o-modal__table-del-icon">
+									<use xlink:href="#icon-rubish-bin"></use>
+								</svg>
+							</td>
+						</tr>
+						<tr class="o-modal__table-row">
+							<td class="o-modal__table-img-cell">
+								<div class="o-modal__table-img"></div>
+							</td>
+							<td class="o-modal__table-name-cell">
+								<h4 class="o-modal__table-name o-modal__table-name_margin_bottom_12">Новый ЦФТ-Банк</h4>
+								<input type="checkbox" name="" id="install-2" checked>
+								<label class="o-modal__table-name-label o-label-checkbox" for="install-2">установка и настройка
+									<svg class="o-label-icon">
+										<use xlink:href="#icon-thick-check"></use>
+									</svg>
+								</label>
+							</td>
+							<td class="o-modal__table-cost-cell">$139,99</td>
+							<td class="o-modal__table-quantity-cell">
+								<div class="o-modal__table-quantity">
+									<svg class="o-modal__table-quantity-icon-minus js-modal__table-quantity-icon-minus">
+										<use xlink:href="#icon-minus"></use>
+									</svg>
+									<svg class="o-modal__table-quantity-icon-plus js-modal__table-quantity-icon-plus">
+										<use xlink:href="#icon-plus"></use>
+									</svg>
+									<input class="o-modal__table-quantity-input js-modal__table-quantity-input" type="number" value="1" min="1" max="10" readonly/>
+								</div>
+							</td>
+							<td class="o-modal__table-sum-cell">$139,99</td>
+							<td class="o-modal__table-del-cell">
+								<svg class="o-modal__table-del-icon">
+									<use xlink:href="#icon-rubish-bin"></use>
+								</svg>
+							</td>
 						</tr>
 					</tbody>
 				</table>
+				<footer class="o-modal__footer">
+					<div class="o-modal__footer-wrapper clearfix">
+						<div class="o-modal__sum-cost">
+							<span class="o-modal__sum-cost-dollars">$549</span>
+							<span class="o-modal__sum-cost-cents">99</span>
+						</div>
+						<button class="o-modal__button o-button o-button_primary o-modal__button_margin_left_70">Далее</button>
+					</div>
+				</footer>
 			</div>
 		</div>
 		<header class="o-header">
@@ -185,11 +244,11 @@
 			</symbol>
 		
 			<symbol id="icon-error" viewBox="0 0 32 32">
-				<defs><circle id="a" cx="10" cy="10" r="10"></circle><mask id="b" width="20" height="20" x="0" y="0" fill="#fff"><use xlink:href="#a"></use></mask></defs><g fill="none" fill-rule="evenodd" transform="translate(6 6)"><use stroke="#358ED7" stroke-width="4" mask="url(#b)" xlink:href="#a"></use><path fill="#358ED7" d="M7 5.996a4.69 4.69 0 0 1 .505-.386 3.623 3.623 0 0 1 1.284-.532A3.93 3.93 0 0 1 9.595 5c.393 0 .75.054 1.074.163.323.108.6.263.83.464.23.2.408.443.535.728.126.285.19.603.19.955 0 .344-.05.64-.15.891-.099.25-.224.469-.375.654a2.988 2.988 0 0 1-.492.481 82.78 82.78 0 0 1-.501.383c-.158.12-.295.237-.41.352a.696.696 0 0 0-.207.39l-.155.989H8.789l-.116-1.104a.301.301 0 0 1-.006-.058v-.058c0-.198.05-.371.149-.518.1-.147.223-.284.372-.413.15-.129.31-.254.481-.376a4.21 4.21 0 0 0 .481-.397 1.95 1.95 0 0 0 .373-.484c.1-.18.15-.393.15-.637 0-.162-.031-.308-.092-.437a.988.988 0 0 0-.254-.332 1.14 1.14 0 0 0-.39-.213 1.566 1.566 0 0 0-.491-.075 2.188 2.188 0 0 0-1.108.275c-.124.07-.23.133-.315.19a.433.433 0 0 1-.23.084.37.37 0 0 1-.353-.203L7 5.996zm1.28 7.988c0-.14.026-.274.078-.4a.955.955 0 0 1 .217-.325 1.067 1.067 0 0 1 .735-.298 1.025 1.025 0 0 1 .725.298 1.025 1.025 0 0 1 .298.725 1.035 1.035 0 0 1-.298.725A1.042 1.042 0 0 1 9.31 15a1.06 1.06 0 0 1-.735-.291.963.963 0 0 1-.217-.322 1.034 1.034 0 0 1-.078-.403z"></path></g>
+				<defs><circle id="a1" cx="10" cy="10" r="10"></circle><mask id="b1" width="20" height="20" x="0" y="0" fill="#fff"><use xlink:href="#a1"></use></mask></defs><g fill="none" fill-rule="evenodd" transform="translate(6 6)"><use stroke="#358ED7" stroke-width="4" mask="url(#b1)" xlink:href="#a"></use><path fill="#358ED7" d="M7 5.996a4.69 4.69 0 0 1 .505-.386 3.623 3.623 0 0 1 1.284-.532A3.93 3.93 0 0 1 9.595 5c.393 0 .75.054 1.074.163.323.108.6.263.83.464.23.2.408.443.535.728.126.285.19.603.19.955 0 .344-.05.64-.15.891-.099.25-.224.469-.375.654a2.988 2.988 0 0 1-.492.481 82.78 82.78 0 0 1-.501.383c-.158.12-.295.237-.41.352a.696.696 0 0 0-.207.39l-.155.989H8.789l-.116-1.104a.301.301 0 0 1-.006-.058v-.058c0-.198.05-.371.149-.518.1-.147.223-.284.372-.413.15-.129.31-.254.481-.376a4.21 4.21 0 0 0 .481-.397 1.95 1.95 0 0 0 .373-.484c.1-.18.15-.393.15-.637 0-.162-.031-.308-.092-.437a.988.988 0 0 0-.254-.332 1.14 1.14 0 0 0-.39-.213 1.566 1.566 0 0 0-.491-.075 2.188 2.188 0 0 0-1.108.275c-.124.07-.23.133-.315.19a.433.433 0 0 1-.23.084.37.37 0 0 1-.353-.203L7 5.996zm1.28 7.988c0-.14.026-.274.078-.4a.955.955 0 0 1 .217-.325 1.067 1.067 0 0 1 .735-.298 1.025 1.025 0 0 1 .725.298 1.025 1.025 0 0 1 .298.725 1.035 1.035 0 0 1-.298.725A1.042 1.042 0 0 1 9.31 15a1.06 1.06 0 0 1-.735-.291.963.963 0 0 1-.217-.322 1.034 1.034 0 0 1-.078-.403z"></path></g>
 			</symbol>
 		
 			<symbol id="icon-filters" viewBox="0 0 32 32">
-				<defs><circle id="a" cx="7" cy="3" r="3"></circle><mask id="d" width="6" height="6" x="0" y="0" fill="#fff"><use xlink:href="#a"></use></mask><circle id="b" cx="14" cy="11" r="3"></circle><mask id="e" width="6" height="6" x="0" y="0" fill="#fff"><use xlink:href="#b"></use></mask><circle id="c" cx="7" cy="19" r="3"></circle><mask id="f" width="6" height="6" x="0" y="0" fill="#fff"><use xlink:href="#c"></use></mask></defs><g fill="none" fill-rule="evenodd" stroke="currentcolor" transform="translate(6 5)"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M0 3h4m6 0h11m0 8h-4m-6 0H0m0 8h4m6 0h11"></path><use stroke-width="4" mask="url(#d)" xlink:href="#a"></use><use stroke-width="4" mask="url(#e)" xlink:href="#b"></use><use stroke-width="4" mask="url(#f)" xlink:href="#c"></use></g>
+				<defs><circle id="a2" cx="7" cy="3" r="3"></circle><mask id="d" width="6" height="6" x="0" y="0" fill="#fff"><use xlink:href="#a2"></use></mask><circle id="b2" cx="14" cy="11" r="3"></circle><mask id="e" width="6" height="6" x="0" y="0" fill="#fff"><use xlink:href="#b2"></use></mask><circle id="c" cx="7" cy="19" r="3"></circle><mask id="f" width="6" height="6" x="0" y="0" fill="#fff"><use xlink:href="#c"></use></mask></defs><g fill="none" fill-rule="evenodd" stroke="currentcolor" transform="translate(6 5)"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M0 3h4m6 0h11m0 8h-4m-6 0H0m0 8h4m6 0h11"></path><use stroke-width="4" mask="url(#d)" xlink:href="#a"></use><use stroke-width="4" mask="url(#e)" xlink:href="#b"></use><use stroke-width="4" mask="url(#f)" xlink:href="#c"></use></g>
 			</symbol>
 		
 			<symbol id="icon-list-search" viewBox="0 0 32 32">
@@ -213,7 +272,16 @@
 			</symbol>
 		
 			<symbol id="icon-rubish-bin" viewBox="0 0 32 32">
-				<defs><path id="a" d="M1 3h16v18H1z"></path><mask id="b" width="16" height="18" x="0" y="0" fill="#fff"><use xlink:href="#a"></use></mask></defs><g fill="none" fill-rule="evenodd" stroke="currentcolor" transform="translate(7 6)"><use stroke-width="4" mask="url(#b)" xlink:href="#a"></use><path stroke-linecap="round" stroke-width="2" d="M0 4h18.136M12.41 2.864a.477.477 0 0 1-.478.477H6.205a.477.477 0 0 1-.478-.477V.477c0-.263.214-.477.478-.477h5.727c.263 0 .477.214.477.477v2.387zm-7.16 4.25v8.59m3.818-8.59v8.59m3.818-8.59v8.59"></path></g>
+				<defs>
+					<path id="a3" d="M1 3h16v18H1z"/>
+					<mask id="b3" width="16" height="18" x="0" y="0" fill="#fff">
+						<use xlink:href="#a3"/>
+					</mask>
+				</defs>
+				<g fill="none" fill-rule="evenodd" stroke="currentcolor" transform="translate(7 6)">
+					<use stroke-width="4" mask="url(#b3)" xlink:href="#a3"/>
+					<path stroke-linecap="round" stroke-width="2" d="M0 4h18.136M12.41 2.864a.477.477 0 0 1-.478.477H6.205a.477.477 0 0 1-.478-.477V.477c0-.263.214-.477.478-.477h5.727c.263 0 .477.214.477.477v2.387zM5.25 7.114v8.59M9.068 7.114v8.59M12.886 7.114v8.59"/>
+				</g>
 			</symbol>
 		
 			<symbol id="icon-search" viewBox="0 0 32 32">
